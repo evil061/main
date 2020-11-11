@@ -4,7 +4,7 @@ import asyncio
 from discord.ext import commands
 #from discord.ext import guild
 
-token = ("DISCORD_TOKEN")
+token = os.getenv("DISCORD_TOKEN")
 
 class MyClient(discord.Client):
     async def on_ready(self):
