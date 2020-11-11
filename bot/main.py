@@ -4,6 +4,8 @@ import asyncio
 from discord.ext import commands
 #from discord.ext import guild
 
+token = ("DISCORD_TOKEN")
+
 class MyClient(discord.Client):
     async def on_ready(self):
     	await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name ="Evil's code"))
